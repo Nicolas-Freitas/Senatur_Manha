@@ -12716,23 +12716,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\45300889873\\.nuget\\packages\\": {},
+    "C:\\Users\\46962757875\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\45300889873\\Desktop\\Senatur_Manha\\Back-End\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\46962757875\\Documents\\A melhor pasta\\Senatur_Manha\\Back-End\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
       "projectName": "Senai.Senatur.WebApi",
-      "projectPath": "C:\\Users\\45300889873\\Desktop\\Senatur_Manha\\Back-End\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
-      "packagesPath": "C:\\Users\\45300889873\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\45300889873\\Desktop\\Senatur_Manha\\Back-End\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\46962757875\\Documents\\A melhor pasta\\Senatur_Manha\\Back-End\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi.csproj",
+      "packagesPath": "C:\\Users\\46962757875\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\46962757875\\Documents\\A melhor pasta\\Senatur_Manha\\Back-End\\Senai.Senatur.WebApi\\Senai.Senatur.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\45300889873\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\46962757875\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
