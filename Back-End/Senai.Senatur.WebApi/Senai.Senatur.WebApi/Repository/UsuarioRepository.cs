@@ -21,6 +21,9 @@ namespace Senai.Senatur.WebApi.Repositories
 
         public List<Usuario> Listar()
         {
+
+
+                
             return ctx.Usuario.ToList();
         }
     }

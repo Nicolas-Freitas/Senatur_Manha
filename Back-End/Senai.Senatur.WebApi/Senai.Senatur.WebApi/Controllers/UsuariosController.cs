@@ -1,16 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Senai.Senatur.WebApi.Interfaces;
+using Senai.Senatur.WebApi.Repositories;
 
 namespace Senai.Senatur.WebApi.Controllers
 {
-    public class UsuariosController : Controller
+    [Produces("application/json")]
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UsuariosController : ControllerBase
     {
-        public IActionResult Index()
+        private IUsuarioRepository UsuarioRepository { get; set; }
+
+        public UsuariosController()
         {
-            return View();
+            UsuarioRepository = new UsuarioRepository();
+        }
+
+        [Authorize(Roles = "1")]
+        [HttpGet]
+        public IActionResult Listar()
+        {
+            try
+            {
+                return Ok(UsuarioRepository.Listar());
+            }
+            catch (Exception)
+            {
+                return BadRequest();
+            }
         }
     }
 }

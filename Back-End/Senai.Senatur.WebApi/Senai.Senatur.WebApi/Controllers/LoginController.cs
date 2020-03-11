@@ -42,7 +42,7 @@ namespace Senai.Senatur.WebApi.Controllers
         public IActionResult Post(LoginViewModel login)
         {
             // Busca o usuário pelo e-mail e senha
-            UsuarioDomain usuarioBuscado = _usuarioRepository.BuscarPorEmailSenha(login.Email, login.Senha);
+            Usuario usuarioBuscado = _usuarioRepository.BuscarPorEmailSenha(login.Email, login.Senha);
 
             // Caso não encontre nenhum usuário com o e-mail e senha informados
             if (usuarioBuscado == null)
@@ -51,17 +51,7 @@ namespace Senai.Senatur.WebApi.Controllers
                 return NotFound("E-mail ou senha inválidos");
             }
 
-            // Caso o usuário seja encontrado, prossegue para a criação do token
-
-            /*
-                Instalar as dependências:
-                Criar e validar o jwt
-                System.IdentityModel.Tokens.Jwt(5.5.0 ou superior)
-                Integrar a parte de autenticação
-                Microsoft.AspNetCore.Authentication.JwtBearer(2.1.1 ou compatível com o .Net Core do projeto)
-            */
-
-            // Define os dados que serão fornecidos no token - Payload
+           
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
